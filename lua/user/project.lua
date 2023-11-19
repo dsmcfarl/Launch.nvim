@@ -10,7 +10,7 @@ function M.config()
     on_config_done = nil,
     manual_mode = false,
     detection_methods = { "pattern" },
-    patterns = { "Pipfile", ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json", "pom.xml" },
+    patterns = { "pyproject.toml", "Pipfile", ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json", "pom.xml" },
     ignore_lsp = {},
     exclude_dirs = {},
     show_hidden = false,
