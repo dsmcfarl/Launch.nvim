@@ -15,4 +15,5 @@ local keymap = vim.api.nvim_set_keymap
 
 -- Normal --
 keymap("n", "<leader>r", ":w<CR>:!python %<CR>", opts)
-vim.opt.textwidth = 79
+vim.opt.textwidth = 99
+vim.opt.smartindent = false
