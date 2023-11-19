@@ -87,6 +87,8 @@ function M.config()
       -- Accept currently selected item. If none selected, `select` first item.
       -- Set `select` to `false` to only confirm explicitly selected items.
       ["<CR>"] = cmp.mapping.confirm { select = true },
+      -- disable these so copilot works
+      --[[
       ["<Tab>"] = cmp.mapping(function(fallback)
         if cmp.visible() then
           cmp.select_next_item()
@@ -115,6 +117,7 @@ function M.config()
         "i",
         "s",
       }),
+      --]]
     },
     formatting = {
       fields = { "kind", "abbr", "menu" },
