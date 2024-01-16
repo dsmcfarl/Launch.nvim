@@ -1,0 +1,10 @@
+local M = { 
+  'mrcjkb/rustaceanvim',
+  version = '^3', -- Recommended
+  ft = { 'rust' },
+}
+
+function M.config()
+end
+
+return M
